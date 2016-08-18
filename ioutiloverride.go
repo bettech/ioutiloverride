@@ -1,7 +1,6 @@
 package ioutiloverride
 
 import (
-	"fmt"
 	"io"
 	"io/ioutil"
 	"os"
@@ -39,7 +38,6 @@ func (fI *fakeIoutil) ReadFile(filename string) ([]byte, error) {
 }
 
 func (fI *fakeIoutil) WriteFile(filename string, data []byte, perm os.FileMode) error {
-	fmt.Println("\n\nFake WriteFile Called\n\n")
 	return nil
 }
 

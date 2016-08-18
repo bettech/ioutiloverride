@@ -25,7 +25,6 @@ func (rI *realIoutil) ReadFile(filename string) ([]byte, error) {
 }
 
 func (rI *realIoutil) WriteFile(filename string, data []byte, perm os.FileMode) error {
-	fmt.Println("\n\nReal WriteFile Called\n\n")
 	return ioutil.WriteFile(filename, data, perm)
 }
 
